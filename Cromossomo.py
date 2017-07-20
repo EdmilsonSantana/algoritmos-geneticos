@@ -42,6 +42,7 @@ class Cromossomo(object):
       if(aleatorio() <= Cromossomo.probabilidade_mutacao):
         gene = genes[index]
         genes[index] = "0" if gene == "1" else "1"
+        index += 1
     self.genes = "".join(genes)
   
   def fitness(self):
